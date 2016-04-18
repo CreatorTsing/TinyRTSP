@@ -1,5 +1,4 @@
 
-
 class TinyRTSPSession
 {
 public:
@@ -8,6 +7,16 @@ public:
     int ParseUrl(char * url);
     int MakeSocketBlocking(int s,bool blocking);
     int InitSession();
+    int SessionDescribe();
+    int SessionAnnounce();
+    int SessionGetParameter();
+    int SessionOptions();
+    int SessionPause();
+    int SessionPlay();
+    int SessionRedirect();
+    int SessionSetup();
+    int SessionTeardown();
+    int SessionSetParameter();
 
 private:
     char* m_Url;
@@ -16,3 +25,4 @@ private:
     
     int m_sockNum;
 };
+

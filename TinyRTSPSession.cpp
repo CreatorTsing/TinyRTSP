@@ -201,14 +201,25 @@ int TinyRTSPSession::InitSession()
 }
 
 
+int TinyRTSPSession::SessionDescribe()
+{
+    return 0;
+}
 
 
+int TinyRTSPSession::SessionAnnounce()
+{
+    return 0;
+}
 
 
+int TinyRTSPSession::SessionGetParameter()
+{
+    return 0;
+}
 
-
-
-
-
-
+int TinyRTSPSession::SessionOptions();
+{
+    return 0;
+}
 
